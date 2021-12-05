@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Google clone</title>
+    <style>
+        *{
+            margin:0;
+
+        }
+body{
+    display:flex;
+    flex-direction: column;
+    height:1000px;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding:20px 30px;
+    align-items: center;
+}
+
+.header a {
+margin-right: 20px;
+color: rgba(0, 0, 0, 0.87);
+font-size: 15px;
+text-decoration: inherit;
+}
+
+.header a:hover{
+    text-decoration: underline;
+}
+
+.header_right{
+    display:flex;
+    align-items: center;
+    min-width: 13px;
+    justify-content: space-between;
+}
+
+.header_right .header_apps{
+margin-right: 10px;
+}
+
+.mainBody{
+    flex: 1px;
+    display:flex;
+    margin-top: 12px;
+    flex-direction: column;
+}
+
+.mainBody img{
+    object-fit: contain;
+    height: 100px;
+}
+
+.search_input{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height:30px;
+    padding:10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    margin:0 auto;
+    margin-top:40px;
+    max-width: 560px;
+}
+
+.search_input input{
+    flex: 1;
+    padding: 10px 20px;
+    border:none;
+    outline:none;
+}
+
+.serach_input .material-icons{
+    color:gray;
+}
+
+.search_buttons{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search_buttons button{
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <!--Header starts-->
+    <div class="header">
+        <div class="header_left">
+            <a href="#">About</a>
+            <a href="#">Store</a>
+        </div>
+        <div class="header_right">
+<a href="#">Gmail</a>
+<a href="#">Images</a>
+<span class="material-icons header_appps">
+    apps
+    </span>
+    <span class="material-icons">
+        account_circle
+        </span>
+        </div>
+    </div>
+    <!--Header ends-->
+    
+    <!--Main Body Starts-->
+    <div class="mainBody">
+        <img src="https://brandlogos.net/wp-content/uploads/2015/09/Google_2015_logo1.svg" alt="Google Logo">
+
+        <!--Search starts-->
+        <div class="search">
+            <div class="search_input">
+                <span class="material-icons">
+                    search
+                    </span>
+                    <input type="text">
+                    <span class="material-icons">
+                        mic
+                        </span>
+            </div>
+
+            <div class="search_buttons">
+                <button>Google search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+        </div>
+        <!--Search ends-->
+    </div>
+    <!--Main Body Ends-->
+</body>
+</html>
